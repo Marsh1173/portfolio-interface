@@ -1,9 +1,16 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 
+const contentBase = path.join(__dirname, "public");
+
 module.exports = {
-    mode: "development",
     entry: "./src/ts/main.tsx",
+    devServer: {
+        watchContentBase: true,
+        port: 3000,
+        contentBase,
+    },
+    mode: "development",
     module: {
         rules: [
             {
@@ -27,7 +34,7 @@ module.exports = {
     },
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "public/js"),
+        path: contentBase,
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
