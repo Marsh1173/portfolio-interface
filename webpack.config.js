@@ -6,9 +6,10 @@ const contentBase = path.join(__dirname, "public");
 module.exports = {
     entry: "./src/ts/main.tsx",
     devServer: {
-        watchContentBase: true,
         port: 3000,
-        contentBase,
+        static: {
+            directory: contentBase,
+        },
     },
     mode: "development",
     module: {
