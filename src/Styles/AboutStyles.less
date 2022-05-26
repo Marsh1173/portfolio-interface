@@ -1,0 +1,63 @@
+#AboutComponent {
+  min-height: 60vh;
+  max-width: @max-width;
+  padding: 150px 0px;
+
+  flex-direction: row;
+
+  div {
+    border: 1px solid black;
+  }
+
+  .portrait-div {
+    width: 40%;
+
+    .image-container-div {
+      height: 70%;
+      align-items: center;
+      justify-content: center;
+
+      .image-div {
+        @size: 270px;
+        background-color: @dark-gray;
+
+        width: @size;
+        height: @size;
+
+        border-radius: 100vw;
+        border: 7px solid white;
+
+        box-shadow: 0px 0px 15px rgba(@black, 0.3);
+      }
+    }
+    .links-div {
+      height: 30%;
+
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .intro-div {
+    padding: 50px;
+    width: 60%;
+
+    gap: 20px;
+
+    color: @black;
+
+    .title {
+      font-weight: 500;
+      font-size: 28px;
+    }
+    .header {
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .text {
+      font-weight: 300;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+#LandingComponent {
+  @shadow: 0px 0px 20px @black;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url("../../public/images/byu-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  background-position: left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100vh;
+
+  & > * {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .landing-image-div {
+    bottom: 50%;
+
+    @size: 220px;
+    height: @size;
+    width: @size;
+    box-shadow: @shadow, @shadow;
+    -webkit-box-shadow: @shadow, @shadow;
+    -moz-box-shadow: @shadow, @shadow;
+    background-color: @black;
+
+    border: 8px solid @white;
+    border-radius: 100vw;
+  }
+
+  .landing-image-text {
+    bottom: 30%;
+
+    color: @white;
+    text-shadow: @shadow, @shadow, @shadow;
+    -webkit-text-shadow: @shadow, @shadow, @shadow;
+    -moz-text-shadow: @shadow, @shadow, @shadow;
+    text-align: center;
+
+    .name {
+      font-size: 84px;
+      font-weight: 400;
+    }
+
+    .about {
+      font-size: 35px;
+      font-weight: 400;
+    }
+  }
+
+  .enter-portfolio-button {
+    box-shadow: @shadow;
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    bottom: 10%;
+
+    background-color: @white;
+    padding: 15px 30px;
+    border-radius: 5px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      background-color: darken(@white, 10%);
+    }
+
+    transition: all 0.07s;
+  }
+}

@@ -1,0 +1,84 @@
+#SkillsComponent {
+  @inner-shadow: inset 0 -100px 100px -140px @black, inset 0 100px 100px -100px rgba(@black, 0.1);
+  background-color: darken(@soft-blue, 10%);
+  color: @white;
+}
+
+#SkillsComponent,
+#ProjectsComponent {
+  padding: 80px 0px;
+
+  text-align: center;
+
+  &,
+  div {
+    align-items: center;
+  }
+
+  span {
+    text-shadow: 0px 0px 15px rgba(@black, 0.2);
+  }
+  span.title {
+    font-weight: 600;
+  }
+  span.text {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .header {
+    margin: 80px 0px;
+    gap: 30px;
+
+    span.title {
+      font-size: 50px;
+    }
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: center;
+
+    max-width: @max-width;
+  }
+
+  .skill-card {
+    width: 300px;
+    padding: 50px;
+    gap: 20px;
+
+    color: @white;
+
+    .image-div {
+      @size: 100px;
+      height: @size;
+      width: @size;
+
+      background-color: @white;
+      border-radius: 100vh;
+
+      justify-content: center;
+
+      .image {
+        height: calc(@size * 3 / 5);
+        width: calc(@size * 3 / 5);
+      }
+
+      .letters {
+        color: @orange;
+        font-size: 50px;
+        font-weight: 600;
+      }
+    }
+
+    span.title {
+      font-size: 26px;
+    }
+    span.text {
+      font-size: 16px;
+      opacity: 0.7;
+    }
+  }
+}

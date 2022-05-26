@@ -7,22 +7,26 @@ import { ProjectsComponent } from "./ProjectsComponent";
 import { SkillsComponent } from "./SkillsComponent";
 import { TimelineComponent } from "./TimelineComponent";
 
-import "./Styles.less";
+import "../Styles/MainStyles.less";
+
+let nextKey: number = 0;
+export function getNextKey(): number {
+  return nextKey++;
+}
 
 class MainDiv extends Component<{}, {}> {
-    render() {
-
-        return(
-            <div id="main-page">
-                <HeaderComponent></HeaderComponent>
-                <LandingComponent></LandingComponent>
-                <AboutComponent></AboutComponent>
-                <SkillsComponent></SkillsComponent>
-                <ProjectsComponent></ProjectsComponent>
-                <TimelineComponent></TimelineComponent>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div id="main-page">
+        <HeaderComponent></HeaderComponent>
+        <LandingComponent></LandingComponent>
+        <AboutComponent></AboutComponent>
+        <SkillsComponent></SkillsComponent>
+        <ProjectsComponent></ProjectsComponent>
+        <TimelineComponent></TimelineComponent>
+      </div>
+    );
+  }
 }
 
 const domContainer = document.querySelector("#reactDom");
