@@ -12,6 +12,7 @@ const header_milestone_array: [string, string][] = [
   ["Skills", "SkillsComponent"],
   ["Projects", "ProjectsComponent"],
   ["Timeline", "TimelineComponent"],
+  ["Contact", "ContactComponent"],
 ];
 
 export class HeaderComponent extends Component<{}, {}> {
