@@ -9,7 +9,7 @@ export class LandingComponent extends Component<{}, {}> {
         <div className="landing-image-text">
           <span className="name">Nate Roylance</span>
           <span className="about">
-            <i>Team Lead & Full-Stack Dev&nbsp;&nbsp;-&nbsp;&nbsp;CS Major</i>
+            <i>Team Lead & Full-Stack Dev, Computer Science</i>
           </span>
         </div>
         <a
