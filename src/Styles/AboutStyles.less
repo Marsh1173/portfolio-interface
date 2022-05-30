@@ -5,10 +5,6 @@
 
   flex-direction: row;
 
-  div {
-    border: 1px solid black;
-  }
-
   .portrait-div {
     width: 40%;
 
@@ -19,7 +15,7 @@
 
       .image-div {
         @size: 270px;
-        background-color: @dark-gray;
+        background-color: @darkest-gray;
 
         width: @size;
         height: @size;
@@ -36,6 +32,34 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
+
+      gap: 20px;
+
+      .about-elem {
+        position: relative;
+        @size: 50px;
+
+        background-color: @darkest-gray;
+        height: @size;
+        width: @size;
+
+        border-radius: 10px;
+
+        &:hover {
+          background-color: @black;
+        }
+
+        .image {
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+          height: calc(@size * 2 / 3);
+          width: calc(@size * 2 / 3);
+        }
+      }
     }
   }
 
@@ -43,21 +67,22 @@
     padding: 50px;
     width: 60%;
 
-    gap: 20px;
-
     color: @black;
 
     .title {
       font-weight: 500;
       font-size: 28px;
+      margin: 30px 0px;
     }
     .header {
       font-weight: 400;
       font-size: 20px;
+      margin: 15px 0px;
     }
     .text {
       font-weight: 300;
       font-size: 17px;
+      margin: 5px 0px;
     }
   }
 }
