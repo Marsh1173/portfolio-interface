@@ -8,6 +8,7 @@ import { SkillsComponent } from "./SkillsComponent";
 import { TimelineComponent } from "./TimelineComponent";
 
 import "../Styles/MainStyles.less";
+import { ContactComponent } from "./ContactComponent";
 
 let nextKey: number = 0;
 export function getNextKey(): number {
@@ -24,6 +25,7 @@ class MainDiv extends Component<{}, {}> {
         <SkillsComponent></SkillsComponent>
         <ProjectsComponent></ProjectsComponent>
         <TimelineComponent></TimelineComponent>
+        <ContactComponent></ContactComponent>
       </div>
     );
   }

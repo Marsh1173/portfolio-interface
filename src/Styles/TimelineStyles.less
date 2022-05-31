@@ -1,0 +1,87 @@
+#TimelineComponent {
+  background-color: @darkest-gray;
+  color: @white;
+
+  .moment-container {
+    @moment-size: 200px;
+    @moment-size-scaled: calc(@moment-size * 1.09);
+    @label-offset: calc(@moment-size-scaled * 1.2);
+    @line-translate: calc(@label-offset / 2);
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: calc(@moment-size * 2.5);
+
+    .moment {
+      position: relative;
+      height: @moment-size * 0.835;
+      width: @moment-size;
+
+      .image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        @hexagon-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        background-size: cover;
+
+        height: @moment-size-scaled;
+        width: @moment-size-scaled;
+
+        -webkit-clip-path: @hexagon-path;
+        clip-path: @hexagon-path;
+      }
+
+      .label {
+        position: absolute;
+        width: @moment-size-scaled;
+        padding-top: calc(@moment-size / 20);
+
+        .date {
+          font-weight: 600;
+        }
+
+        .title {
+          color: @dark-orange;
+          font-weight: 600;
+          font-size: 25px;
+        }
+
+        .description {
+        }
+
+        a,
+        span {
+          width: 100%;
+        }
+
+        .line {
+          height: 1px;
+          width: calc(@moment-size * 4 / 3);
+
+          background-color: @white;
+        }
+      }
+
+      &.left .label {
+        transform: translateX(@label-offset);
+        text-align: start;
+        .line {
+          transform: translateX(calc(@line-translate * -1));
+        }
+      }
+      &.right .label {
+        transform: translateX(calc(@label-offset * -1));
+        text-align: end;
+        .line {
+          transform: translateX(@line-translate);
+        }
+      }
+      &.offset {
+        transform: translateX(calc(@moment-size / 2));
+      }
+    }
+  }
+}

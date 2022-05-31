@@ -76,18 +76,21 @@ export class HeaderComponent extends Component<{}, {}> {
     }
 
     window.onscroll = (e: Event) => {
+      let index = -1;
       for (let i: number = 0; i < milestone_elems.length; i++) {
         if (milestone_elems[i] != null) {
           let dist_to_top: number = milestone_elems[i]!.offsetTop - window.innerHeight / 3;
 
           if (dist_to_top > window.pageYOffset) {
-            if (current_progress_index !== Math.max(0, i - 1)) {
-              current_progress_index = Math.max(0, i - 1);
-              update_milestone_header_elems();
-            }
             break;
           }
         }
+        index = Math.min(index + 1, milestone_elems.length - 1);
+      }
+
+      if (index !== current_progress_index) {
+        current_progress_index = index;
+        update_milestone_header_elems();
       }
     };
     window.onresize = () => {
