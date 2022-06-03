@@ -32,12 +32,25 @@ export class HeaderComponent extends Component<{}, {}> {
       );
     });
 
+    let small_elem: JSX.Element = (
+      <a
+        className="passed"
+        onClick={() => {
+          document.getElementById(header_milestone_array[0][1])?.scrollIntoView(true);
+        }}
+        key={getNextKey()}
+      >
+        {header_milestone_array[0][0]}
+      </a>
+    );
+
     return (
       <div id="HeaderComponent">
-        <div id="header-max-width">
+        <div className="header-max-width">
           {milestone_elems}
           <div id="header-line"></div>
         </div>
+        <div className="header-min-width">{small_elem}</div>
       </div>
     );
   }

@@ -9,13 +9,28 @@
   background-color: @black;
   box-shadow: 0px 0px calc(@header-height / 3) @black;
 
-  #header-max-width {
+  .header-max-width {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
 
     max-width: @max-width;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .header-min-width {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @media screen and (max-width: 700px) {
+      display: flex;
+    }
   }
 
   button {

@@ -5,8 +5,6 @@
   flex-direction: row;
 
   .portrait-div {
-    width: 40%;
-
     .image-container-div {
       height: 70%;
       align-items: center;
@@ -26,6 +24,7 @@
       }
     }
     .links-div {
+      padding: 40px;
       height: 30%;
 
       flex-direction: row;
@@ -65,7 +64,6 @@
 
   .intro-div {
     padding: 50px;
-    width: 60%;
 
     color: @black;
 
@@ -83,6 +81,30 @@
       font-weight: 300;
       font-size: 17px;
       margin: 5px 0px;
+    }
+  }
+
+  @media screen and (min-width: 841px) {
+    .portrait-div {
+      width: 40%;
+    }
+    .intro-div {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    flex-direction: column;
+    align-items: center;
+    .portrait-div {
+      .image-container-div {
+        .image-div {
+          @size: 220px;
+
+          width: @size;
+          height: @size;
+        }
+      }
     }
   }
 }

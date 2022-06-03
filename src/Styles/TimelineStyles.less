@@ -3,7 +3,7 @@
   color: @white;
 
   .moment-container {
-    @moment-size: 200px;
+    @moment-size: 250px;
     @moment-size-scaled: calc(@moment-size * 1.09);
     @label-offset: calc(@moment-size-scaled * 1.2);
     @line-translate: calc(@label-offset / 2);
@@ -37,7 +37,7 @@
       .label {
         position: absolute;
         width: @moment-size-scaled;
-        padding-top: calc(@moment-size / 20);
+        padding-top: calc(@moment-size / 10);
 
         .date {
           font-weight: 600;
@@ -47,6 +47,13 @@
           color: @dark-orange;
           font-weight: 600;
           font-size: 25px;
+        }
+
+        a.title:hover {
+          color: darken(@dark-orange, 10%);
+        }
+
+        .description {
         }
 
         a,
