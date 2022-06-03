@@ -40,7 +40,7 @@
   .landing-image-text {
     bottom: 30%;
 
-    color: @white;
+    color: @bright-white;
     text-shadow: @shadow, @shadow, @shadow;
     -webkit-text-shadow: @shadow, @shadow, @shadow;
     -moz-text-shadow: @shadow, @shadow, @shadow;
@@ -65,12 +65,14 @@
 
     background-color: @white;
     padding: 15px 30px;
+    border: none;
     border-radius: 5px;
 
     font-size: 18px;
     font-weight: 500;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken(@white, 10%);
     }
 

@@ -12,14 +12,14 @@ export class LandingComponent extends Component<{}, {}> {
             <i>Team Lead & Full-Stack Dev, Computer Science</i>
           </span>
         </div>
-        <a
+        <button
           className="enter-portfolio-button"
           onClick={() => {
             document.getElementById("AboutComponent")?.scrollIntoView(true);
           }}
         >
           Enter Portfolio
-        </a>
+        </button>
       </div>
     );
   }

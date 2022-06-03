@@ -9,6 +9,7 @@ import { TimelineComponent } from "./TimelineComponent";
 
 import "../Styles/MainStyles.less";
 import { ContactComponent } from "./ContactComponent";
+import { FooterComponent } from "./FooterComponent";
 
 let nextKey: number = 0;
 export function getNextKey(): number {
@@ -26,6 +27,7 @@ class MainDiv extends Component<{}, {}> {
         <ProjectsComponent></ProjectsComponent>
         <TimelineComponent></TimelineComponent>
         <ContactComponent></ContactComponent>
+        <FooterComponent></FooterComponent>
       </div>
     );
   }

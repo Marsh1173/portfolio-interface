@@ -26,7 +26,7 @@ export class SkillsComponent extends Component<{}, {}> {
   render() {
     let skill_elems: JSX.Element[] = skills_data.map((data) => {
       return (
-        <div className="skill-card" key={getNextKey()}>
+        <div className="skill-card" key={getNextKey()} tabIndex={0}>
           <div className="image-div">
             {data.img_url && <img className="image" src={"images/" + data.img_url} alt={data.img_url}></img>}
             {data.letters && <span className="letters">{data.letters}</span>}
@@ -40,7 +40,7 @@ export class SkillsComponent extends Component<{}, {}> {
       <div id="SkillsComponent">
         <div className="header">
           <span className="title">Skills</span>
-          <span className="text">Listed below are a few of my skills, but I'm always looking to add more.</span>
+          <span className="text">Listed below are a few of my skills.</span>
         </div>
         <div className="card-container">{skill_elems}</div>
       </div>

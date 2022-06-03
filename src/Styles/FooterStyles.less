@@ -1,0 +1,19 @@
+#FooterComponent {
+  background-color: @darkest-gray;
+  color: @white;
+
+  min-height: 200px;
+
+  justify-content: center;
+  align-items: center;
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    &:active {
+      color: darken(@white, 10%);
+    }
+  }
+}

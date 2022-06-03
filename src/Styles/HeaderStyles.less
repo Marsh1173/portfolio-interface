@@ -18,7 +18,7 @@
     max-width: @max-width;
   }
 
-  a {
+  button {
     z-index: 1;
     color: @white;
     text-transform: uppercase;
@@ -44,7 +44,8 @@
       color: @black;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       transition: all 0.07s;
       transform: scale(1.03);
     }

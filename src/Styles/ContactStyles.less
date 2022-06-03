@@ -1,2 +1,54 @@
 #ContactComponent {
+  padding-bottom: 0px;
+  padding: 100px 0px;
+
+  span,
+  label,
+  button {
+    color: @white;
+  }
+
+  .contact-container {
+    max-width: @max-width;
+    width: 80%;
+    padding: 50px 20px;
+    background-color: @darkest-gray;
+
+    border: none;
+    border-radius: 40px;
+
+    .contact-title {
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .contact-field-row {
+      justify-content: center;
+      flex-direction: row;
+      gap: 10px;
+      margin: 3px;
+
+      label {
+        text-align: end;
+        font-size: 20px;
+        width: 100px;
+      }
+
+      input {
+        background-color: @white;
+        display: flex;
+        width: 300px;
+        font-size: 20px;
+
+        padding: 5px;
+      }
+
+      button {
+        margin: 20px;
+        padding: 10px 20px;
+        font-size: 50px;
+        font-weight: 600;
+      }
+    }
+  }
 }

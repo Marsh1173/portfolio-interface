@@ -19,7 +19,7 @@ export class HeaderComponent extends Component<{}, {}> {
   render() {
     let milestone_elems = header_milestone_array.map((data) => {
       return (
-        <a
+        <button
           className="passed"
           id={get_milestone_id(data[1])}
           onClick={() => {
@@ -28,7 +28,7 @@ export class HeaderComponent extends Component<{}, {}> {
           key={getNextKey()}
         >
           {data[0]}
-        </a>
+        </button>
       );
     });
 
