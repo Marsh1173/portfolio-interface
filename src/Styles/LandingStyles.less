@@ -1,7 +1,4 @@
 #LandingComponent {
-  @shadow: 0px 0px 20px @black;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../../public/images/byu-misty.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-attachment: fixed;
@@ -58,12 +55,12 @@
   }
 
   .enter-portfolio-button {
-    box-shadow: @shadow;
-    -webkit-box-shadow: @shadow;
-    -moz-box-shadow: @shadow;
+    box-shadow: @light-shadow;
+    -webkit-box-shadow: @light-shadow;
+    -moz-box-shadow: @light-shadow;
     bottom: 10%;
 
-    background-color: @white;
+    background-color: @bright-white;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -77,5 +74,40 @@
     }
 
     transition: all 0.07s;
+  }
+
+  @media screen and (max-width: @bp-wide) {
+    .landing-image-div {
+      @size: 180px;
+      height: @size;
+      width: @size;
+    }
+    .landing-image-text {
+      .name {
+        font-size: 60px;
+      }
+      .about {
+        font-size: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: @bp-mid) {
+    .landing-image-div {
+      @size: 160px;
+      height: @size;
+      width: @size;
+    }
+    .landing-image-text {
+      .name {
+        font-size: 40px;
+      }
+      .about {
+        font-size: 15px;
+      }
+    }
+    .enter-portfolio-button {
+      padding: 10px 17px;
+      font-size: 14px;
+    }
   }
 }

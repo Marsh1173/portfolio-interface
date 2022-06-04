@@ -1,6 +1,6 @@
 #AboutComponent {
   max-width: @max-width;
-  padding: 150px 0px;
+  padding: 75px 0px;
 
   flex-direction: row;
 
@@ -69,22 +69,29 @@
 
     .title {
       font-weight: 500;
-      font-size: 28px;
-      margin: 30px 0px;
+      font-size: 45px;
+      margin: 20px 0px;
     }
     .header {
-      font-weight: 400;
+      font-weight: 500;
       font-size: 20px;
-      margin: 15px 0px;
+      margin-top: 20px;
     }
     .text {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 17px;
       margin: 5px 0px;
     }
+
+    ul {
+      padding-left: 20px; /* key property */
+      li {
+        padding: 5px 0px;
+      }
+    }
   }
 
-  @media screen and (min-width: 841px) {
+  @media screen and (min-width: calc(@bp-mid + 1)) {
     .portrait-div {
       width: 40%;
     }
@@ -93,17 +100,34 @@
     }
   }
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: @bp-mid) {
+    padding: 100px 0px;
     flex-direction: column;
     align-items: center;
     .portrait-div {
       .image-container-div {
         .image-div {
-          @size: 220px;
+          @size: 200px;
 
           width: @size;
           height: @size;
         }
+      }
+    }
+    .intro-div {
+      padding: 0px 50px;
+    }
+  }
+  @media screen and (max-width: @bp-small) {
+    .intro-div {
+      .title {
+        font-size: 27px;
+      }
+      .header {
+        font-size: 16px;
+      }
+      .text {
+        font-size: 14px;
       }
     }
   }

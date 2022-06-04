@@ -4,7 +4,12 @@ import { Component } from "react";
 export class LandingComponent extends Component<{}, {}> {
   render() {
     return (
-      <div id="LandingComponent">
+      <div
+        id="LandingComponent"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./images/byu-misty.jpg")',
+        }}
+      >
         <div className="landing-image-div"></div>
         <div className="landing-image-text">
           <span className="name">Nate Roylance</span>

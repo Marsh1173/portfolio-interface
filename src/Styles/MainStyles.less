@@ -18,11 +18,19 @@
 @white: #d0d0d0;
 @bright-white: #ffffff;
 
+@blue: #006eff;
 @soft-blue: #2c4b5e;
 @orange: #f5a11b;
-@dark-orange: darken(@orange, 10%);
+@dark-orange: #d88500;
 
 @max-width: 1200px;
+
+@shadow: 0px 0px 20px @black;
+@light-shadow: 0px 0px 5px rgba(@black, 0.5);
+
+@bp-wide: 1200px;
+@bp-mid: 840px;
+@bp-small: 650px;
 
 body,
 html {
@@ -30,6 +38,7 @@ html {
   margin: 0px;
   scroll-behavior: smooth;
   background-color: @off-white;
+  color: @black;
 }
 
 div {
@@ -43,9 +52,13 @@ div {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-a {
+a,
+button {
   cursor: pointer;
   text-decoration: none;
 }

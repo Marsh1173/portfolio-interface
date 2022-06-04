@@ -33,7 +33,7 @@ export class HeaderComponent extends Component<{}, {}> {
     });
 
     let small_elem: JSX.Element = (
-      <a
+      <button
         className="passed"
         onClick={() => {
           document.getElementById(header_milestone_array[0][1])?.scrollIntoView(true);
@@ -41,7 +41,7 @@ export class HeaderComponent extends Component<{}, {}> {
         key={getNextKey()}
       >
         {header_milestone_array[0][0]}
-      </a>
+      </button>
     );
 
     return (

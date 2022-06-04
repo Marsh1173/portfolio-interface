@@ -33,6 +33,13 @@ const moments: Moment[] = [
     description: "Working toward my Bachelors in Computer Science. Planned graduation in December 2022.",
   },
   {
+    image_url: "timeline-dbmanager.png",
+    time_string: "2020 - 2021",
+    title: "Database Manager",
+    title_url: "https://norpac.com/our-products/",
+    description: "Managed the production database for the Quincy Foods branch of NORPAC.",
+  },
+  {
     image_url: "timeline-mission.png",
     time_string: "2018 - 2020",
     title: "LDS Mission",

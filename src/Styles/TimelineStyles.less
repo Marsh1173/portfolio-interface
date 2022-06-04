@@ -2,9 +2,13 @@
   background-color: @darkest-gray;
   color: @white;
 
+  .header {
+    color: @bright-white;
+  }
   .moment-container {
-    @moment-size: 250px;
+    @moment-size: 220px;
     @moment-size-scaled: calc(@moment-size * 1.09);
+    @label-width: calc(@moment-size * 1.13);
     @label-offset: calc(@moment-size-scaled * 1.2);
     @line-translate: calc(@label-offset / 2);
 
@@ -36,7 +40,7 @@
 
       .label {
         position: absolute;
-        width: @moment-size-scaled;
+        width: @label-width;
         padding-top: calc(@moment-size / 10);
 
         .date {
@@ -51,9 +55,6 @@
 
         a.title:hover {
           color: darken(@dark-orange, 10%);
-        }
-
-        .description {
         }
 
         a,
@@ -88,7 +89,7 @@
       }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: @bp-wide) {
       max-width: calc(@moment-size * 1.9);
       .moment {
         &.offset {
@@ -107,14 +108,15 @@
       }
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: @bp-mid) {
       @moment-size: 130px;
       @moment-size-scaled: calc(@moment-size * 1.09);
-      @label-offset: calc(@moment-size-scaled * 1.1);
+      @label-width: calc(@moment-size * 1.13);
+      @label-offset: calc(@moment-size-scaled * 1.02);
       @line-translate: calc(@label-offset / 2);
 
-      max-width: calc(@moment-size * 1.9);
-      gap: 70px;
+      max-width: calc(@moment-size * 2);
+      gap: 60px;
 
       .moment {
         height: @moment-size * 0.835;
@@ -125,7 +127,7 @@
           width: @moment-size-scaled;
         }
         .label {
-          width: @moment-size-scaled;
+          width: @label-width;
           padding-top: calc(@moment-size / 20);
           .line {
             width: calc(@moment-size * 4 / 3);
