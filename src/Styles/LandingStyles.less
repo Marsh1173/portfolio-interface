@@ -1,19 +1,18 @@
 #LandingComponent {
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-attachment: fixed;
-  background-position: left center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @media screen and (min-width: calc(@bp-small + 1px)) {
+    background-attachment: fixed;
+  }
 
   position: relative;
   height: 100vh;
   max-height: 1080px;
-
-  overflow-y: scroll;
-  overflow: hidden;
 
   & > * {
     position: absolute;
