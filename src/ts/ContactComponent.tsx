@@ -90,10 +90,16 @@ export const ContactComponent = () => {
           Feel free to reach out to me through email or phone, or use the form below to send me a message.
         </span>
         <span className="text-highlight">
-          Phone: <a tabIndex={0}>+1 (509) 717-8321</a>
+          Phone:{" "}
+          <a tabIndex={0} href="tel:+15097178321">
+            +1 (509) 717-8321
+          </a>
         </span>
         <span className="text-highlight">
-          Email: <a tabIndex={0}>natehroylance@gmail.com</a>
+          Email:{" "}
+          <a tabIndex={0} href="mailto: natehroylance@gmail.com">
+            natehroylance@gmail.com
+          </a>
         </span>
       </div>
       <div className="contact-container">

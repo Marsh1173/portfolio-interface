@@ -30,7 +30,9 @@ export class AboutComponent extends Component<{}, {}> {
       <div id="AboutComponent">
         <div className="portrait-div">
           <div className="image-container-div">
-            <div className="image-div"></div>
+            <div className="image-div">
+              <img src="images/profile-about.jpg" alt="profile picture"></img>
+            </div>
           </div>
           <div className="links-div">{aboutElems}</div>
         </div>

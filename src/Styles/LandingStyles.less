@@ -12,6 +12,9 @@
   height: 100vh;
   max-height: 1080px;
 
+  overflow-y: scroll;
+  overflow: hidden;
+
   & > * {
     position: absolute;
     left: 50%;
@@ -22,7 +25,7 @@
   .landing-image-div {
     bottom: 50%;
 
-    @size: 220px;
+    @size: 250px;
     height: @size;
     width: @size;
     box-shadow: @shadow, @shadow;
@@ -32,6 +35,12 @@
 
     border: 8px solid @white;
     border-radius: 100vw;
+
+    overflow: clip;
+
+    img {
+      opacity: 0.9;
+    }
   }
 
   .landing-image-text {
@@ -68,8 +77,7 @@
     font-size: 18px;
     font-weight: 500;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: darken(@white, 10%);
     }
 

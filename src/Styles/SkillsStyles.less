@@ -49,6 +49,7 @@
     flex-direction: row;
 
     justify-content: center;
+    align-items: flex-start;
 
     max-width: @max-width;
   }
@@ -108,7 +109,44 @@
       .skill-card {
         width: 250px;
         padding: 30px;
-        gap: 20px;
+        gap: 15px;
+        .image-div {
+          @size: 110px;
+          height: @size;
+          width: @size;
+          .image {
+            height: calc(@size * 3 / 5);
+            width: calc(@size * 3 / 5);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: @bp-small) {
+    span.text,
+    span.text-highlight {
+      margin: 0px 30px;
+      font-size: 15px;
+    }
+    .card-container {
+      padding: 20px;
+      .skill-card {
+        width: 200px;
+        padding: 20px;
+        gap: 10px;
+        .image-div {
+          @size: 90px;
+          height: @size;
+          width: @size;
+          .image {
+            height: calc(@size * 3 / 5);
+            width: calc(@size * 3 / 5);
+          }
+        }
+        span.title {
+          font-size: 20px;
+        }
       }
     }
   }
