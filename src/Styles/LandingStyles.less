@@ -6,13 +6,15 @@
   -o-background-size: cover;
   background-size: cover;
 
+  position: relative;
+  max-height: 100vh;
+  height: 162vw;
+
   @media screen and (min-width: calc(@bp-small + 1px)) {
     background-attachment: fixed;
+    height: 100vh;
+    max-height: 1080px;
   }
-
-  position: relative;
-  height: 100vh;
-  max-height: 1080px;
 
   & > * {
     position: absolute;
