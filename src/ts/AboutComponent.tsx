@@ -40,13 +40,14 @@ export class AboutComponent extends Component<{}, {}> {
           <span className="title">Nate Roylance</span>
           <span className="header">Entry Level Software Engineer and Web Developer</span>
           <ul>
-            <li className="text">Self-motivated and dependable, team worker, proactive problem-solver.</li>
+            <li className="text">Self-motivated and dependable, proactive problem-solver.</li>
+            <li className="text">Thrives in a team-based environment, exceptional communicator.</li>
             <li className="text">
-              Outside of school and work, I enjoy learning to use languages and libraries (e.g. React, Django,
-              Typescript).
+              Outside of school and work, I enjoy learning languages and libraries (e.g. React, Django, Typescript) with
+              personal projects.
             </li>
             <li className="text">
-              I enjoy architecting systems from the ground up and solving complex problems cleanly.
+              I enjoy architecting systems from the ground up and solving complex problems cleanly and efficiently.
             </li>
           </ul>
           <span className="header">Anticipated BYU Graduate Winter '22</span>
