@@ -16,14 +16,15 @@ const moments: Moment[] = [
     time_string: "2021 - Current",
     title: "BYU Webmaster",
     title_url: "https://cs.byu.edu/",
-    description: "Overhauling the website for BYU's Computer Science department with a team of developers.",
+    description:
+      "Leading a team to overhaul the website for BYU's Computer Science department with a team of developers.",
   },
   {
     image_url: "timeline-c3.png",
     time_string: "2022",
     title: "C3-Fence",
     title_url: "https://c3-fence.com/#/",
-    description: "Publishing and upkeeping a custom-made website for the company C3-Fence.",
+    description: "Personally publishing and upkeeping a custom-made website for the company C3-Fence.",
   },
   {
     image_url: "timeline-byu.jpg",
@@ -56,6 +57,9 @@ const moments: Moment[] = [
 
 export class TimelineComponent extends Component<{}, {}> {
   render() {
+    if (moments.length > 6) {
+      throw new Error("Timeline should not have more than 6 items!");
+    }
     let timeline_moments: JSX.Element[] = moments.map((data, index) => {
       let style: string = " left";
       if (index % 2 === 0) {

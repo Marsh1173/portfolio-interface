@@ -7,7 +7,7 @@ export class LandingComponent extends Component<{}, {}> {
       <div
         id="LandingComponent"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./images/byu-misty.jpg")',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("./images/seattle.jpg")',
         }}
       >
         <div className="landing-image-div">

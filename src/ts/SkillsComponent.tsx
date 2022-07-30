@@ -10,22 +10,42 @@ interface SkillData {
 }
 
 const skills_data: SkillData[] = [
-  { img_url: "icon-python.svg", title: "Python", text: "4 years of experience, 1 of work experience." },
-  { letters: "Ts", title: "Typescript", text: "4 years of experience, in addition to JavaScript experience." },
-  { img_url: "icon-java.svg", title: "Java", text: "3 years of experience in Android Studio and AWS." },
-  { img_url: "icon-github.svg", title: "Git", text: "3 years of experience with git-based team projects." },
-  { img_url: "icon-aws.svg", title: "AWS", text: "Several projects using API Gateway, lambdas, and DynamoDB." },
-  { img_url: "icon-c.svg", title: "C/C#/C++", text: "5 years of on-and-off experience." },
-  { img_url: "icon-react.svg", title: "React", text: "3 years of experience. No Angular experience yet." },
+  { img_url: "icon-python.svg", title: "Python", text: "Very well versed in Python. Used in BU's CS website." },
+  {
+    letters: "Ts",
+    title: "Typescript",
+    text: "Very well versed in TypeScript and JavaScript. Used in nearly all my personal projects.",
+  },
+  { img_url: "icon-java.svg", title: "Java", text: "Well versed in Java. Used with AWS and Android Studio." },
+  { img_url: "icon-github.svg", title: "Git", text: "Very familiar with GitHub. Used in all my projects." },
+  {
+    img_url: "icon-aws.svg",
+    title: "AWS",
+    text: "Finished several large projects using API Gateway, lambdas, and DynamoDB.",
+  },
+  {
+    img_url: "icon-c.svg",
+    title: "C/C#/C++",
+    text: "In-depth experience. Solid understanding of sockets, pointers, and memory.",
+  },
+  { img_url: "icon-react.svg", title: "React", text: "Well-versed in React. Used in nearly all my personal projects." },
   {
     img_url: "icon-yarn.svg",
     title: "NPM/Yarn",
     text: "Used in the majority of my projects, especially webpack and babel.",
   },
-  { img_url: "icon-html.svg", title: "HTML/CSS/\nLess/Sass", text: "4 years of heavy experience." },
-  { letters: "dj", title: "Django", text: "1 year of work experience." },
-  { img_url: "icon-database.svg", title: "SQL/Mongo", text: "2 years of familiarity." },
-  { img_url: "icon-android.svg", title: "Android Studio", text: "Passable experience." },
+  { img_url: "icon-html.svg", title: "HTML/CSS/\nLess/Sass", text: "Well versed in website design." },
+  { letters: "dj", title: "Django", text: "Very familiar with Django. Used constantly while working for BYU." },
+  {
+    img_url: "icon-database.svg",
+    title: "SQL/Mongo",
+    text: "Very familiar, passable experience with most popular database programs.",
+  },
+  {
+    img_url: "icon-android.svg",
+    title: "Android Studio",
+    text: "Passable experience with activities, fragments, and automated testing.",
+  },
 ];
 
 export class SkillsComponent extends Component<{}, {}> {
