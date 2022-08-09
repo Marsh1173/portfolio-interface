@@ -10,7 +10,7 @@ interface SkillData {
 }
 
 const skills_data: SkillData[] = [
-  { img_url: "icon-python.svg", title: "Python", text: "Very well versed in Python. Used in BU's CS website." },
+  { img_url: "icon-python.svg", title: "Python", text: "Very well versed in Python. Used in BYU's CS website." },
   {
     letters: "Ts",
     title: "Typescript",
