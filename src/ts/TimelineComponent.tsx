@@ -90,7 +90,7 @@ export class TimelineComponent extends Component<{}, {}> {
       <div id="TimelineComponent">
         <div className="header">
           <span className="title">Timeline</span>
-          <span className="text">Here's a timeline of my education and career.</span>
+          <span className="text">Here's a timeline of my education &amp; career.</span>
         </div>
         <div className="moment-container">{timeline_moments}</div>
       </div>

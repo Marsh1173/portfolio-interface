@@ -23,9 +23,9 @@ class MainDiv extends Component<{}, {}> {
         <HeaderComponent></HeaderComponent>
         <LandingComponent></LandingComponent>
         <AboutComponent></AboutComponent>
-        <SkillsComponent></SkillsComponent>
-        <ProjectsComponent></ProjectsComponent>
         <TimelineComponent></TimelineComponent>
+        <ProjectsComponent></ProjectsComponent>
+        <SkillsComponent></SkillsComponent>
         <ContactComponent></ContactComponent>
         <FooterComponent></FooterComponent>
       </div>

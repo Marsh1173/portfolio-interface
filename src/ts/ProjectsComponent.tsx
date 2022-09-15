@@ -14,8 +14,15 @@ const projects: ProjectData[] = [
     image_url: "project-byu-cs.png",
     title: "Django Backend, Wagtail Frontend",
     about:
-      "While I was working for BYU's CS Department, I led a team in redesigning several large outdated backend and frontend systems and creating new ones.",
+      "While I work at BYU's CS Department, I lead a team in redesigning several large outdated backend and frontend systems and creating new ones.",
     url: "https://cs.byu.edu/",
+  },
+  {
+    image_url: "project-c3-fence.png",
+    title: "React, Routing, RESTful APIs",
+    about:
+      "I personally published a custom-made, multi-page website for the company C3-Fence. I work to upkeep the website and add content as necessary.",
+    url: "https://c3-fence.com/#/",
   },
   {
     image_url: "project-websocket.png",

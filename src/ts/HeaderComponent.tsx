@@ -9,9 +9,9 @@ function get_milestone_id(name: string): string {
 const header_milestone_array: [string, string][] = [
   ["Nate Roylance", "LandingComponent"],
   ["About", "AboutComponent"],
-  ["Skills", "SkillsComponent"],
-  ["Projects", "ProjectsComponent"],
   ["Timeline", "TimelineComponent"],
+  ["Projects", "ProjectsComponent"],
+  ["Skills", "SkillsComponent"],
   ["Contact", "ContactComponent"],
 ];
 
