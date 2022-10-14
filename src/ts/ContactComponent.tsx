@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { CONTACT_CONTENT } from "../Content/ContactContent";
 
 export const ContactComponent = () => {
   const [name, setName] = useState("");
@@ -56,7 +57,7 @@ export const ContactComponent = () => {
     };
 
     var data_js = {
-      access_token: "1psw8r6eboqechyuv1llmu8v",
+      access_token: CONTACT_CONTENT.email_smtp_access_token,
       subject: "Quote Request",
       text: name + "\nNumber: " + number + "\nEmail: " + email + "\nMessage: " + message,
     };
@@ -91,14 +92,14 @@ export const ContactComponent = () => {
         </span>
         <span className="text-highlight">
           Phone:{" "}
-          <a tabIndex={0} href="tel:+15097178321">
-            +1 (509) 717-8321
+          <a tabIndex={0} href={CONTACT_CONTENT.phone_url}>
+            {CONTACT_CONTENT.phone_string}
           </a>
         </span>
         <span className="text-highlight">
           Email:{" "}
-          <a tabIndex={0} href="mailto: natehroylance@gmail.com">
-            natehroylance@gmail.com
+          <a tabIndex={0} href={CONTACT_CONTENT.email_url}>
+            {CONTACT_CONTENT.email_string}
           </a>
         </span>
       </div>

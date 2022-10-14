@@ -1,13 +1,17 @@
 import React from "react";
 import { Component } from "react";
 import { getNextKey } from "./main";
+import { HEADER_NAME_STRING } from "../Content/HeaderContent";
 
 function get_milestone_id(name: string): string {
   return "milestone-" + name;
 }
 
+/*
+If you add / remove sections, make sure to add / remove their name and element id from this tuple array.
+*/
 const header_milestone_array: [string, string][] = [
-  ["Nate Roylance", "LandingComponent"],
+  [HEADER_NAME_STRING, "LandingComponent"],
   ["About", "AboutComponent"],
   ["Timeline", "TimelineComponent"],
   ["Projects", "ProjectsComponent"],

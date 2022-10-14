@@ -1,17 +1,17 @@
 import React from "react";
 import { Component } from "react";
+import { FOOTER_LINKS } from "../Content/FooterContent";
 
 export class FooterComponent extends Component<{}, {}> {
   render() {
-    return (
-      <div id="FooterComponent">
-        <a tabIndex={0} href="mailto: natehroylance@gmail.com">
-          Email: natehroylance@gmail.com
+    let footer_components: JSX.Element[] = FOOTER_LINKS.map((footer_link_data) => {
+      return (
+        <a tabIndex={0} href={footer_link_data.url}>
+          {footer_link_data.name}
         </a>
-        <a tabIndex={0} href="tel:+15097178321">
-          Phone: 509-717-8321
-        </a>
-      </div>
-    );
+      );
+    });
+
+    return <div id="FooterComponent">{footer_components}</div>;
   }
 }
