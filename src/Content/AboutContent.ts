@@ -28,7 +28,7 @@ export const ABOUT_CONTENT: AboutContentInterface = {
   ],
   sections: [
     {
-      title: "Entry Level Software Engineer and Web Developer",
+      title: "Software Engineer and Web Developer",
       subtext: [
         "Self-motivated and dependable, proactive problem-solver.",
         "Thrives in a team-based environment, exceptional communicator.",
@@ -37,11 +37,11 @@ export const ABOUT_CONTENT: AboutContentInterface = {
       ],
     },
     {
-      title: "Anticipated BYU Graduate Winter '22",
+      title: "BYU Graduate Winter '22",
       subtext: ["ACT score of 33", "3.97 Major GPA"],
     },
     {
-      title: "Graduated high school with AAS Degree in 2018",
+      title: "High School Grad with AAS Degree in '18",
       subtext: [
         "Dean’s/Vice Dean’s list 2016-18",
         "3.84 GPA",

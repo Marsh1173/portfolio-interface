@@ -12,6 +12,12 @@ export const SKILLS_CONTENT: SkillData[] = [
     title: "Typescript",
     text: "Very well versed in TypeScript and JavaScript. Used in nearly all my personal projects.",
   },
+  { img_url: "icon-react.svg", title: "React", text: "Well-versed in React. Used in nearly all my personal projects." },
+  {
+    img_url: "icon-mobile.svg",
+    title: "Mobile Development",
+    text: "Experience with Android studio (activities, fragments) and React Native.",
+  },
   { img_url: "icon-java.svg", title: "Java", text: "Well versed in Java. Used with AWS and Android Studio." },
   { img_url: "icon-github.svg", title: "Git", text: "Very familiar with GitHub. Used in all my projects." },
   {
@@ -24,22 +30,26 @@ export const SKILLS_CONTENT: SkillData[] = [
     title: "C/C#/C++",
     text: "In-depth experience. Solid understanding of sockets, pointers, and memory.",
   },
-  { img_url: "icon-react.svg", title: "React", text: "Well-versed in React. Used in nearly all my personal projects." },
-  {
-    img_url: "icon-yarn.svg",
-    title: "NPM/Yarn",
-    text: "Used in the majority of my projects, especially webpack and babel.",
-  },
   { img_url: "icon-html.svg", title: "HTML/CSS/\nLess/Sass", text: "Well versed in website design." },
   { letters: "dj", title: "Django", text: "Very familiar with Django. Used constantly while working for BYU." },
   {
     img_url: "icon-database.svg",
-    title: "SQL/Mongo",
-    text: "Very familiar, passable experience with most popular database programs.",
+    title: "SQL/NoSQL",
+    text: "Very familiar with popular database programs, including Redis, PostgreSQL, MySQL, and MongoDB.",
   },
   {
-    img_url: "icon-android.svg",
-    title: "Android Studio",
-    text: "Passable experience with activities, fragments, and automated testing.",
+    img_url: "icon-yarn.svg",
+    title: "NPM/Yarn",
+    text: "Used in the majority of my projects.",
+  },
+  {
+    img_url: "icon-test.svg",
+    title: "Automated Testing",
+    text: "Experience with python's unittest, Mockito, and JUnit 5.",
+  },
+  {
+    img_url: "icon-vue.svg",
+    title: "Vue",
+    text: "Passable experience with Vue (routing, pages).",
   },
 ];

@@ -24,10 +24,10 @@ export const TIMELINE_CONTENT: Moment[] = [
   },
   {
     image_url: "timeline-byu.jpg",
-    time_string: "2020 - Current",
+    time_string: "2020 - 2022",
     title: "BYU",
     title_url: "https://www.byu.edu/",
-    description: "Working toward my Bachelors in Computer Science. Planned graduation in December 2022.",
+    description: "Bachelors in Computer Science. 3.97 Major GPA.",
   },
   {
     image_url: "timeline-dbmanager.png",

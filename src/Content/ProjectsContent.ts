@@ -10,7 +10,7 @@ export const PROJECT_CONTENT: ProjectData[] = [
     image_url: "project-byu-cs.png",
     title: "Django Backend, Wagtail Frontend",
     about:
-      "While I work at BYU's CS Department, I lead a team in redesigning several large outdated backend and frontend systems and creating new ones.",
+      "I lead a team for BYU's CS Department in redesigning several large outdated backend and frontend systems and creating new ones.",
     url: "https://cs.byu.edu/",
   },
   {
@@ -19,6 +19,13 @@ export const PROJECT_CONTENT: ProjectData[] = [
     about:
       "I personally published a custom-made, multi-page website for the company C3-Fence. I work to upkeep the website and add content as necessary.",
     url: "https://c3-fence.com/#/",
+  },
+  {
+    image_url: "project-knights-code.png",
+    title: "Startup Business",
+    about:
+      "I led a team of 3 developers to create a quick MVP of a potential startup, including customer / market validation and investor pitching.",
+    url: "https://knightscode.natehroylance.com/",
   },
   {
     image_url: "project-websocket.png",
