@@ -1,7 +1,9 @@
 import React from "react";
 import { Component } from "react";
-import { getNextKey } from "./main";
-import { SKILLS_CONTENT } from "../Content/SkillsContent";
+import { getNextKey } from "../main/main";
+import { SKILLS_CONTENT } from "./SkillsContent";
+
+import "./SkillsStyles.less";
 
 export class SkillsComponent extends Component<{}, {}> {
   render() {

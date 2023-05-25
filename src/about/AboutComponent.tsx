@@ -1,7 +1,9 @@
 import React from "react";
 import { Component } from "react";
-import { getNextKey } from "./main";
-import { ABOUT_CONTENT } from "../Content/AboutContent";
+import { getNextKey } from "../main/main";
+import { ABOUT_CONTENT } from "./AboutContent";
+
+import "./AboutStyles.less";
 
 export class AboutComponent extends Component<{}, {}> {
   render() {

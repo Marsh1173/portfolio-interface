@@ -1,7 +1,9 @@
 import React from "react";
 import { Component } from "react";
-import { getNextKey } from "./main";
-import { TIMELINE_CONTENT } from "../Content/TimelineContent";
+import { getNextKey } from "../main/main";
+import { TIMELINE_CONTENT } from "./TimelineContent";
+
+import "./TimelineStyles.less";
 
 export class TimelineComponent extends Component<{}, {}> {
   render() {

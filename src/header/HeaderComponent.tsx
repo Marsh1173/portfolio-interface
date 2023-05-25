@@ -1,7 +1,9 @@
 import React from "react";
 import { Component } from "react";
-import { getNextKey } from "./main";
-import { HEADER_NAME_STRING } from "../Content/HeaderContent";
+import { getNextKey } from "../main/main";
+import { HEADER_NAME_STRING } from "./HeaderContent";
+
+import "./HeaderStyles.less";
 
 function get_milestone_id(name: string): string {
   return "milestone-" + name;

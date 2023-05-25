@@ -1,7 +1,9 @@
 import React from "react";
 import { Component } from "react";
-import { getNextKey } from "./main";
-import { PROJECT_CONTENT } from "../Content/ProjectsContent";
+import { getNextKey } from "../main/main";
+import { PROJECT_CONTENT } from "./ProjectsContent";
+
+import "./ProjectsStyles.less";
 
 export class ProjectsComponent extends Component<{}, {}> {
   render() {

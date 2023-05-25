@@ -1,6 +1,8 @@
 import React from "react";
 import { Component } from "react";
-import { LANDING_CONFIG } from "../Content/LandingContent";
+import { LANDING_CONFIG } from "./LandingContent";
+
+import "./LandingStyles.less";
 
 export class LandingComponent extends Component<{}, {}> {
   render() {

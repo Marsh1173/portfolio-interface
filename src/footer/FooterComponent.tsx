@@ -1,6 +1,8 @@
 import React from "react";
 import { Component } from "react";
-import { FOOTER_LINKS } from "../Content/FooterContent";
+import { FOOTER_LINKS } from "./FooterContent";
+
+import "./FooterStyles.less";
 
 export class FooterComponent extends Component<{}, {}> {
   render() {

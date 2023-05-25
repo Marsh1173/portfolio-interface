@@ -4,7 +4,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const contentBase = path.join(__dirname, "public");
 
 module.exports = {
-  entry: "./src/ts/main.tsx",
+  entry: "./src/main/main.tsx",
   devServer: {
     port: 3000,
     static: {

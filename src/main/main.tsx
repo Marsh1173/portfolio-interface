@@ -1,15 +1,15 @@
 import React, { Component, createElement } from "react";
 import ReactDOM from "react-dom";
-import { AboutComponent } from "./AboutComponent";
-import { HeaderComponent } from "./HeaderComponent";
-import { LandingComponent } from "./LandingComponent";
-import { ProjectsComponent } from "./ProjectsComponent";
-import { SkillsComponent } from "./SkillsComponent";
-import { TimelineComponent } from "./TimelineComponent";
+import { AboutComponent } from "../about/AboutComponent";
+import { HeaderComponent } from "../header/HeaderComponent";
+import { LandingComponent } from "../landing/LandingComponent";
+import { ProjectsComponent } from "../projects/ProjectsComponent";
+import { SkillsComponent } from "../skills/SkillsComponent";
+import { TimelineComponent } from "../timeline/TimelineComponent";
+import { ContactComponent } from "../contact/ContactComponent";
+import { FooterComponent } from "../footer/FooterComponent";
 
-import "../Styles/MainStyles.less";
-import { ContactComponent } from "./ContactComponent";
-import { FooterComponent } from "./FooterComponent";
+import "./MainStyles.less";
 
 let nextKey: number = 0;
 export function getNextKey(): number {

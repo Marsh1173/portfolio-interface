@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
-import { CONTACT_CONTENT } from "../Content/ContactContent";
+import { CONTACT_CONTENT } from "./ContactContent";
+
+import "./ContactStyles.less";
 
 export const ContactComponent = () => {
   const [name, setName] = useState("");

@@ -8,5 +8,16 @@
     "esModuleInterop": true,
     "target": "ESNext"
   },
-  "include": ["./src/ts/**/*.ts", "./src/ts/**/*.tsx"]
+  "include": [
+    "src/main/**/*.ts",
+    "src/main/**/*.tsx",
+    "src/header/HeaderComponent.tsx",
+    "src/about/AboutComponent.tsx",
+    "src/contact/ContactComponent.tsx",
+    "src/footer/FooterComponent.tsx",
+    "src/landing/LandingComponent.tsx",
+    "src/skills/SkillsComponent.tsx",
+    "src/projects/ProjectsComponent.tsx",
+    "src/timeline/TimelineComponent.tsx"
+  ]
 }
