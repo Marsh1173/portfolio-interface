@@ -10,7 +10,7 @@ export class AboutComponent extends Component<{}, {}> {
     let about_elems: JSX.Element[] = ABOUT_CONTENT.links.map((data) => {
       return (
         <a className="about-elem" href={data.site_url} key={getNextKey()} target="_blank">
-          <img className="image" src={"images/" + data.image_url} alt={data.image_url}></img>
+          <img className="image" src={"images/icons/" + data.image_url} alt={data.image_url}></img>
         </a>
       );
     });
@@ -32,7 +32,7 @@ export class AboutComponent extends Component<{}, {}> {
         <div className="portrait-div">
           <div className="image-container-div">
             <div className="image-div">
-              <img src={ABOUT_CONTENT.profile_picture_url} alt="profile picture"></img>
+              <img src={"images/about/" + ABOUT_CONTENT.profile_picture_url} alt="profile picture"></img>
             </div>
           </div>
           <div className="links-div">{about_elems}</div>

@@ -10,7 +10,7 @@ export class ProjectsComponent extends Component<{}, {}> {
     let project_elems: JSX.Element[] = PROJECT_CONTENT.map((data) => {
       return (
         <div key={getNextKey()} className="project-card">
-          <div className="image" style={{ backgroundImage: `url("images/` + data.image_url + `")` }}>
+          <div className="image" style={{ backgroundImage: `url("images/projects/` + data.image_url + `")` }}>
             <a className="visit-text" target="_blank" href={data.url}>
               Visit
             </a>

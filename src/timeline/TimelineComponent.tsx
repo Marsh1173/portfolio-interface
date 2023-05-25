@@ -20,7 +20,7 @@ export class TimelineComponent extends Component<{}, {}> {
       }
       return (
         <div className={"moment" + style} key={getNextKey()}>
-          <div className="image" style={{ backgroundImage: `url("images/` + data.image_url + `")` }}></div>
+          <div className="image" style={{ backgroundImage: `url("images/timeline/` + data.image_url + `")` }}></div>
           <div className="label" tabIndex={0}>
             <span className="date">{data.time_string}</span>
             {data.title_url && (

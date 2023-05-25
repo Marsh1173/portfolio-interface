@@ -11,7 +11,7 @@ export class SkillsComponent extends Component<{}, {}> {
       return (
         <div className="skill-card" key={getNextKey()} tabIndex={0}>
           <div className="image-div">
-            {data.img_url && <img className="image" src={"images/" + data.img_url} alt={data.img_url}></img>}
+            {data.img_url && <img className="image" src={"images/icons/" + data.img_url} alt={data.img_url}></img>}
             {data.letters && <span className="letters">{data.letters}</span>}
           </div>
           <span className="title">{data.title}</span>

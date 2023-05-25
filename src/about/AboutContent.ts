@@ -17,7 +17,7 @@ interface AboutContentInterface {
 
 export const ABOUT_CONTENT: AboutContentInterface = {
   name: "Nate Roylance",
-  profile_picture_url: "images/profile-about.jpg",
+  profile_picture_url: "portrait.jpg",
   links: [
     {
       image_url: "icon-linkedin.svg",

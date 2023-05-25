@@ -8,6 +8,6 @@ interface LandingConfig {
 export const LANDING_CONFIG: LandingConfig = {
   name_string: "Nate Roylance",
   about_string: "Team Lead & Full-Stack Dev, Computer Science",
-  profile_image_url: "images/profile-landing.jpg",
-  background_image_url: "images/seattle.jpg",
+  profile_image_url: "images/landing/portrait.jpg",
+  background_image_url: "images/landing/background.jpg",
 };
