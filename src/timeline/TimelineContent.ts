@@ -36,7 +36,7 @@ export const TIMELINE_CONTENT: Moment[] = [
     description: "Graduated with a B.S. in Computer Science, 3.97 Major GPA.",
   },
   {
-    image_url: "timeline-mission1.png",
+    image_url: "timeline-mission.png",
     time_string: "2018 - 2020",
     title: "LDS Mission",
     description: "Served an LDS mission in Puebla, Mexico.",
