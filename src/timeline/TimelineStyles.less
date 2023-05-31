@@ -17,7 +17,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    max-width: calc(@moment-size * 2.5);
+    // max-width: calc(@moment-size * 2.5);
+    max-width: calc(@moment-size * 1.9);
 
     .moment {
       position: relative;
@@ -28,7 +29,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 1;
+        z-index: @timeline-z;
 
         @hexagon-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
         background-size: cover;
@@ -38,6 +39,8 @@
 
         -webkit-clip-path: @hexagon-path;
         clip-path: @hexagon-path;
+
+        background-color: white;
       }
 
       .label {
@@ -79,32 +82,13 @@
           transform: translateX(calc(@line-translate * -1));
         }
       }
-      &.right .label {
-        transform: translateX(calc(@label-offset * -1));
-        text-align: end;
-        .line {
-          transform: translateX(@line-translate);
-        }
-      }
-      &.offset {
-        transform: translateX(calc(@moment-size / 2));
-      }
-    }
-
-    @media screen and (max-width: @bp-wide) {
-      max-width: calc(@moment-size * 1.9);
-      .moment {
-        &.offset {
-          transform: none;
-        }
-        &.right {
-          transform: translateX(calc(-@moment-size / 2));
-          .label {
-            transform: translateX(@label-offset);
-            text-align: start;
-            .line {
-              transform: translateX(calc(@line-translate * -1));
-            }
+      &.right {
+        transform: translateX(calc(-@moment-size / 2));
+        .label {
+          transform: translateX(@label-offset);
+          text-align: start;
+          .line {
+            transform: translateX(calc(@line-translate * -1));
           }
         }
       }

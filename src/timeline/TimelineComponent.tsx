@@ -24,7 +24,7 @@ export class TimelineComponent extends Component<{}, {}> {
           <div className="label" tabIndex={0}>
             <span className="date">{data.time_string}</span>
             {data.title_url && (
-              <a className="title" href={data.title_url}>
+              <a className="title" target="_blank" href={data.title_url}>
                 {data.title}
               </a>
             )}
@@ -40,7 +40,7 @@ export class TimelineComponent extends Component<{}, {}> {
       <div id="TimelineComponent">
         <div className="header">
           <span className="title">Timeline</span>
-          <span className="text">Here's a timeline of my education &amp; career.</span>
+          <span className="text">Here's a timeline of my career.</span>
         </div>
         <div className="moment-container">{timeline_moments}</div>
       </div>

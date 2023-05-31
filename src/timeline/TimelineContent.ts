@@ -8,36 +8,35 @@ interface Moment {
 
 export const TIMELINE_CONTENT: Moment[] = [
   {
+    image_url: "timeline-lucid.png",
+    time_string: "2023 - Current",
+    title: "Lucid Software",
+    title_url: "https://lucid.co/",
+    description: "Working with a team of developers to create Lucid Software's integration tools.",
+  },
+  {
     image_url: "timeline-webmaster.jpg",
-    time_string: "2021 - Current",
+    time_string: "2021 - 2023",
     title: "BYU Webmaster",
     title_url: "https://cs.byu.edu/",
-    description:
-      "Leading a team to overhaul the website for BYU's Computer Science department with a team of developers.",
+    description: "Leading a team of developers to overhaul the website for BYU's Computer Science department.",
   },
   {
     image_url: "timeline-c3.png",
     time_string: "2022",
     title: "C3-Fence",
     title_url: "https://c3-fence.com/#/",
-    description: "Personally publishing and upkeeping a custom-made website for the company C3-Fence.",
+    description: "Managing a website for the company C3-Fence.",
   },
   {
     image_url: "timeline-byu.jpg",
     time_string: "2020 - 2022",
     title: "BYU",
     title_url: "https://www.byu.edu/",
-    description: "Bachelors in Computer Science. 3.97 Major GPA.",
+    description: "Graduated with a B.S. in Computer Science, 3.97 Major GPA.",
   },
   {
-    image_url: "timeline-dbmanager.png",
-    time_string: "2020 - 2021",
-    title: "Database Manager",
-    title_url: "https://norpac.com/our-products/",
-    description: "Managed the production database for the Quincy Foods branch of NORPAC.",
-  },
-  {
-    image_url: "timeline-mission.png",
+    image_url: "timeline-mission1.png",
     time_string: "2018 - 2020",
     title: "LDS Mission",
     description: "Served an LDS mission in Puebla, Mexico.",
@@ -47,6 +46,9 @@ export const TIMELINE_CONTENT: Moment[] = [
     time_string: "2016 - 2018",
     title: "Big Bend",
     title_url: "https://www.bigbend.edu/",
-    description: "Graduated with my Associates of Applied Science through the Running Start program in Washington.",
+    description: "Graduated with my A.A.S. through the Running Start program in Washington.",
   },
 ];
+
+// circle logo for lucid (black background)
+// make mission circle bigger

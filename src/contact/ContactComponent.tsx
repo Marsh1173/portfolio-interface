@@ -111,7 +111,7 @@ export const ContactComponent = () => {
           onFocus={onFocusRemoveError}
           onChange={(e) => setName(e.target.value)}
           ref={nameElem}
-          placeholder={"*Your name"}
+          placeholder={"Your name*"}
         ></textarea>
         <textarea
           autoComplete="off"
@@ -133,7 +133,7 @@ export const ContactComponent = () => {
           className="message-input"
           onChange={(e) => setMessage(e.target.value)}
           ref={messageElem}
-          placeholder={"*Your message here..."}
+          placeholder={"Your message here*"}
         ></textarea>
         <button onClick={() => sendMessage()} ref={sendButton}>
           Send

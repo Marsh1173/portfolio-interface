@@ -17,7 +17,11 @@ export class AboutComponent extends Component<{}, {}> {
 
     let section_elems: JSX.Element[] = ABOUT_CONTENT.sections.map((data) => {
       let list_items: JSX.Element[] = data.subtext.map((text) => {
-        return <li className="text">{text}</li>;
+        return (
+          <li className="text" key={getNextKey()}>
+            {text}
+          </li>
+        );
       });
       return (
         <>
@@ -29,17 +33,24 @@ export class AboutComponent extends Component<{}, {}> {
 
     return (
       <div id="AboutComponent">
-        <div className="portrait-div">
-          <div className="image-container-div">
-            <div className="image-div">
-              <img src={"images/about/" + ABOUT_CONTENT.profile_picture_url} alt="profile picture"></img>
+        <div id="about-component-container">
+          <div className="portrait-div">
+            <div className="image-container-div">
+              <div className="image-div">
+                <img src={"images/about/" + ABOUT_CONTENT.profile_picture_url} alt="profile picture"></img>
+              </div>
             </div>
+            {!!ABOUT_CONTENT.work_banner && (
+              <a className="work-banner" target="_blank" href={ABOUT_CONTENT.work_banner.link}>
+                <img className="work-banner-image" src={"images/about/" + ABOUT_CONTENT.work_banner.picture_url}></img>
+              </a>
+            )}
+            <div className="links-div">{about_elems}</div>
           </div>
-          <div className="links-div">{about_elems}</div>
-        </div>
-        <div className="intro-div">
-          <span className="title">{ABOUT_CONTENT.name}</span>
-          {section_elems}
+          <div className="intro-div">
+            <span className="title">{ABOUT_CONTENT.name}</span>
+            {section_elems}
+          </div>
         </div>
       </div>
     );

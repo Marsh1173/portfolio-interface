@@ -1,0 +1,14 @@
+.fade-in-on-load () {
+  &:not(.loaded) {
+    opacity: 0;
+    visibility: none;
+  }
+
+  &.loaded {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}

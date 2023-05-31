@@ -1,14 +1,28 @@
+@import "../commonview/styles/Mixins.less";
 @import "../commonview/styles/Variables.less";
 
 #LandingComponent {
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  #background-image-div {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: @background-image-z;
+
+    .fade-in-on-load();
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   position: relative;
+  background-color: black;
+  clip: rect(top, right, bottom, left);
+
   max-height: 100vh;
   height: 162vw;
 
@@ -49,7 +63,7 @@
   }
 
   .landing-image-text {
-    bottom: 30%;
+    bottom: 28%;
 
     color: @bright-white;
     text-shadow: @shadow, @shadow, @shadow;
@@ -66,6 +80,12 @@
       font-size: 30px;
       font-weight: 400;
     }
+
+    @solid: rgba(@black, 0.6);
+    @transparent: rgba(@black, 0);
+
+    padding: 10px 0px;
+    background-image: linear-gradient(90deg, @transparent 20%, @solid 30%, @solid 70%, @transparent 80%);
   }
 
   .enter-portfolio-button {

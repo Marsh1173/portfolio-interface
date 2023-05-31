@@ -17,7 +17,7 @@ export const PROJECT_CONTENT: ProjectData[] = [
     image_url: "project-c3-fence.png",
     title: "React, Routing, RESTful APIs",
     about:
-      "I personally published a custom-made, multi-page website for the company C3-Fence. I work to upkeep the website and add content as necessary.",
+      "I personally made and published the website for the company C3-Fence. I work to upkeep the website and add content as requested.",
     url: "https://c3-fence.com/#/",
   },
   {
@@ -39,11 +39,5 @@ export const PROJECT_CONTENT: ProjectData[] = [
     title: "Basic Physics Engine",
     about: "For this project, I challenged myself to make a 2D physics engine from scratch.",
     url: "https://ibh.natehroylance.com/",
-  },
-  {
-    image_url: "project-dev.png",
-    title: "React and System Structure",
-    about: "This was a personal project to get my feet wet with React and the MVC pattern.",
-    url: "https://md.natehroylance.com/",
   },
 ];
