@@ -15,18 +15,18 @@ export const TIMELINE_CONTENT: Moment[] = [
     description: "Working with a team of developers to create Lucid Software's integration tools.",
   },
   {
+    image_url: "timeline-c3.png",
+    time_string: "2022-2023",
+    title: "C3-Fence",
+    title_url: "https://fencing.natehroylance.com/#/",
+    description: "Managed a website for the company C3-Fence (now defunct).",
+  },
+  {
     image_url: "timeline-webmaster.jpg",
     time_string: "2021 - 2023",
     title: "BYU Webmaster",
     title_url: "https://cs.byu.edu/",
     description: "Leading a team of developers to overhaul the website for BYU's Computer Science department.",
-  },
-  {
-    image_url: "timeline-c3.png",
-    time_string: "2022",
-    title: "C3-Fence",
-    title_url: "https://c3-fence.com/#/",
-    description: "Managing a website for the company C3-Fence.",
   },
   {
     image_url: "timeline-byu.jpg",

@@ -17,8 +17,8 @@ export const PROJECT_CONTENT: ProjectData[] = [
     image_url: "project-c3-fence.png",
     title: "React, Routing, RESTful APIs",
     about:
-      "I personally made and published the website for the company C3-Fence. I work to upkeep the website and add content as requested.",
-    url: "https://c3-fence.com/#/",
+      "I personally made and published the website for the company C3-Fence. I upkept the website and added content as requested.",
+    url: "https://fencing.natehroylance.com/#/",
   },
   {
     image_url: "project-knights-code.png",
