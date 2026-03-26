@@ -35,7 +35,7 @@ export const ABOUT_CONTENT: AboutContentInterface = {
   ],
   sections: [
     {
-      title: "Software Engineer, Lucid Software",
+      title: "Software Engineer 2, Lucid Software",
       subtext: [
         "Creating complex systems that enable third-party developers to improve the lives of millions of tech workers around the world.",
         "Team contributer, with a passion for stable and long-lived code.",

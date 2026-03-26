@@ -26,7 +26,7 @@ export class ProjectsComponent extends Component<{}, {}> {
       <div id="ProjectsComponent">
         <div className="header">
           <span className="title">Projects</span>
-          <span className="text">Listed below are a few of the finished and unfinished projects I've worked on.</span>
+          <span className="text">Listed below are some of the projects I've worked on in my spare time.</span>
         </div>
         <div className="card-container">{project_elems}</div>
       </div>
