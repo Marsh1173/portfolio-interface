@@ -2,7 +2,7 @@ interface ProjectData {
   image_url: string;
   title: string;
   about: string;
-  url: string;
+  url?: string;
 }
 
 export const PROJECT_CONTENT: ProjectData[] = [
@@ -18,7 +18,6 @@ export const PROJECT_CONTENT: ProjectData[] = [
     title: "Cloud-Sync Obsidian Plugin",
     about:
       "Engineered a custom synchronization tool for Obsidian markdown files using Google Drive APIs for seamless cross-device data persistence.",
-    url: "https://github.com/Marsh1173/obsidian-files-sync",
   },
   {
     image_url: "project-knights-code.png",

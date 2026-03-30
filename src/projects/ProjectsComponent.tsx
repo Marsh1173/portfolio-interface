@@ -1,5 +1,4 @@
-import React from "react";
-import { Component } from "react";
+import React, { Component } from "react";
 import { getNextKey } from "../main/main";
 import { PROJECT_CONTENT } from "./ProjectsContent";
 
@@ -11,9 +10,11 @@ export class ProjectsComponent extends Component<{}, {}> {
       return (
         <div key={getNextKey()} className="project-card">
           <div className="image" style={{ backgroundImage: `url("images/projects/` + data.image_url + `")` }}>
-            <a className="visit-text" target="_blank" href={data.url}>
-              Visit
-            </a>
+            {data.url && (
+              <a className="visit-text" target="_blank" href={data.url}>
+                Visit
+              </a>
+            )}
           </div>
           <span className="title">{data.title}</span>
           <span className="about">
